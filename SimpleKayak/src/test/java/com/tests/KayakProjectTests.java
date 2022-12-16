@@ -28,7 +28,6 @@ public class KayakProjectTests extends Base{
 			log.info("Go to Website: " + webUrl);
 			driver.get(webUrl);
 			myGSLibrary.customWait(2);
-			
 	
 	// Round Trip	
 			myGSLibrary.clickElement(mylocator.getLocator("RoundTripElem"));
@@ -38,29 +37,30 @@ public class KayakProjectTests extends Base{
 			log.info("Click on 'Round Trip' dropdown element");
 
 	//Two Adults
-			myGSLibrary.clickElement(By.cssSelector("div.zcIg.zcIg-pres-default.zcIg-mod-align-center > div:nth-child(2) > div"));
+			myGSLibrary.clickElement(mylocator.getLocator("AdultDropSelection"));
 			myGSLibrary.customWait(1);
-			myGSLibrary.clickElement(By.cssSelector("div.UKFa.UKFa-mod-variant-default > div:nth-child(1) > div > button:nth-child(3)"));
+			myGSLibrary.clickElement(mylocator.getLocator("AddTravelorBtn"));
 			myGSLibrary.customWait(1);
-			log.info("Selected 2 Travelors");
-
+			log.info("Selected 2 Travelers");
 			
-	//Economy Flight
-			myGSLibrary.clickElement(By.cssSelector("div[class='wIIH wIIH-mod-size-small wIIH-mod-state-default wIIH-pres-default wIIH-mod-variant-default wIIH-mod-radius-none wIIH-mod-full-width'] span[class='svg wIIH-chevron-icon-wrapper']"));
+	//First Flight
+			myGSLibrary.clickElement(mylocator.getLocator("FlightDropDown"));
 			myGSLibrary.customWait(1);
-			myGSLibrary.clickElement(By.xpath("//li[@id='e']"));
+			myGSLibrary.clickElement(mylocator.getLocator("FirstClassBtn"));
 			myGSLibrary.customWait(1);
-			
+			log.info("Selected First Class Flight");
 			
 	//Checked bags
-			myGSLibrary.clickElement(By.xpath("//span[normalize-space()='0 bags']"));
+			myGSLibrary.clickElement(mylocator.getLocator("BagDrop"));
 			myGSLibrary.customWait(1);
-			myGSLibrary.clickElement(By.xpath("//div[@role='dialog']//div[2]//div[1]//button[2]"));
+			myGSLibrary.clickElement(mylocator.getLocator("BagDropDown"));
 			myGSLibrary.customWait(1);
+			log.info("Selected Check Bags");
 			
 	//From Washington, DC	
-			myGSLibrary.clickElement(By.xpath("//div[@class='vvTc-item-value']"));
+			myGSLibrary.clickElement(mylocator.getLocator("SelectDCDeparture"));
 			myGSLibrary.customWait(1);
+			log.info("Selected Departure Location");
 			
 	// To Honolulu, Hawaii
 			myGSLibrary.clickElement(By.cssSelector("input[placeholder='To?']"));
