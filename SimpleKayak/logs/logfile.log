@@ -1,0 +1,67 @@
+INFO  | 2022-12-16 13:36:14 | [main] library.Base (Base.java:36) - Running before all test.
+INFO  | 2022-12-16 13:36:14 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-16 13:36:14 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-16 13:36:14 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-16 13:36:14 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-16 13:36:14 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-16 13:36:25 | [main] library.GlobalSelenium (GlobalSelenium.java:128) - Starting browser ---> EDGE_CHROMIUM
+INFO  | 2022-12-16 13:36:25 | [main] tests.KayakProjectTests (KayakProjectTests.java:28) - Go to Website: https://www.kayak.com/
+INFO  | 2022-12-16 13:36:34 | [main] tests.KayakProjectTests (KayakProjectTests.java:34) - Click on 'Round Trip' dropdown element
+ERROR | 2022-12-16 13:37:24 | [main] library.GlobalSelenium (GlobalSelenium.java:410) - Error: 
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@aria-label='February 21, 2023']"}
+  (Session info: MicrosoftEdge=108.0.1462.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e1e658292665dc17285b7508942c12d0, findElement {using=xpath, value=//div[@aria-label='February 21, 2023']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.54, ms:edgeOptions: {debuggerAddress: localhost:51033}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\medin\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51033/devtoo..., se:cdpVersion: 108.0.1462.54, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e1e658292665dc17285b7508942c12d0
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351) ~[selenium-remote-driver-4.7.2.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343) ~[selenium-remote-driver-4.7.2.jar:?]
+	at com.library.GlobalSelenium.clickElement(GlobalSelenium.java:406) ~[test-classes/:?]
+	at com.tests.KayakProjectTests.searchTicket(KayakProjectTests.java:84) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.6.1.jar:7.6.1]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:806) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestRunner.run(TestRunner.java:601) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.runSuites(TestNG.java:1099) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.TestNG.run(TestNG.java:1067) ~[testng-7.6.1.jar:7.6.1]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) ~[testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251) ~[testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) ~[testng-remote.jar:?]
+INFO  | 2022-12-16 13:37:25 | [main] library.GlobalSelenium (GlobalSelenium.java:327) - Screenshot Location --->  C:\Users\medin\git\SimpleKayakLocalRepo\SimpleKayak\target\searchTicket_20221216133724983.png
+INFO  | 2022-12-16 13:37:30 | [main] library.Base (Base.java:50) - Running after all tests

@@ -11,12 +11,14 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.library.Base;
+import com.library.LocatorMap;
 
 public class KayakProjectTests extends Base{
 //This test was created by a another student in class
 	
 	public static final Logger log = LogManager.getLogger(KayakProjectTests.class);
-
+	String filePath = "src/test/resources/locatormap.properties";
+	LocatorMap mylocator = new LocatorMap(filePath);
 	
 	@Test
 	public void searchTicket() {
@@ -29,20 +31,19 @@ public class KayakProjectTests extends Base{
 			
 	
 	// Round Trip	
-			log.info("Click on 'Round Trip' dropdown element");
-			//myGSLibrary.clickElement(By.xpath("//div[@role='button']//span[@class='svg wIIH-chevron-icon-wrapper']//*[name()='svg']"));
-			myGSLibrary.clickElement(By.xpath("//div[@class='wIIH wIIH-mod-size-small wIIH-mod-state-default wIIH-pres-default wIIH-mod-variant-default wIIH-mod-radius-none wIIH-mod-full-width wIIH-mod-dirty']"));
+			myGSLibrary.clickElement(mylocator.getLocator("RoundTripElem"));
 			myGSLibrary.customWait(2);
-			log.info("");
-			myGSLibrary.clickElement(By.xpath("//li[@aria-label='Round-trip']//span[contains(text(),'Round-trip')]"));
+			myGSLibrary.clickElement(mylocator.getLocator("RoundTripDropElem"));
 			myGSLibrary.customWait(1);
+			log.info("Click on 'Round Trip' dropdown element");
 
 	//Two Adults
-			myGSLibrary.clickElement(By.xpath("//div[@class='zcIg']//div[2]//div[1]//span[2]//*[name()='svg']"));
+			myGSLibrary.clickElement(By.cssSelector("div.zcIg.zcIg-pres-default.zcIg-mod-align-center > div:nth-child(2) > div"));
 			myGSLibrary.customWait(1);
-			myGSLibrary.clickElement(By.xpath("//div[@class='UKFa UKFa-mod-variant-default']//div[1]//div[1]//button[2]//*[name()='svg']"));
+			myGSLibrary.clickElement(By.cssSelector("div.UKFa.UKFa-mod-variant-default > div:nth-child(1) > div > button:nth-child(3)"));
 			myGSLibrary.customWait(1);
-			
+			log.info("Selected 2 Travelors");
+
 			
 	//Economy Flight
 			myGSLibrary.clickElement(By.cssSelector("div[class='wIIH wIIH-mod-size-small wIIH-mod-state-default wIIH-pres-default wIIH-mod-variant-default wIIH-mod-radius-none wIIH-mod-full-width'] span[class='svg wIIH-chevron-icon-wrapper']"));
@@ -133,4 +134,5 @@ public class KayakProjectTests extends Base{
 			assertEquals(true, false);
 		}
 	}
+	
 }
