@@ -8,6 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.locators.RelativeLocator;
 import org.testng.annotations.Test;
 
 import com.library.Base;
@@ -36,12 +37,14 @@ public class KayakProjectTests extends Base{
 			myGSLibrary.customWait(1);
 			log.info("Click on 'Round Trip' dropdown element");
 
+			By travelerLocator = RelativeLocator.with(By.tagName("span")).toRightOf(By.xpath("//div[@class='wIIH wIIH-mod-size-small wIIH-mod-state-default wIIH-pres-default wIIH-mod-variant-default wIIH-mod-radius-none wIIH-mod-full-width wIIH-mod-dirty']"));
+			
 	//Two Adults
-			myGSLibrary.clickElement(mylocator.getLocator("AdultDropSelection"));
-			myGSLibrary.customWait(1);
-			myGSLibrary.clickElement(mylocator.getLocator("AddTravelorBtn"));
-			myGSLibrary.customWait(1);
-			log.info("Selected 2 Travelers");
+//			myGSLibrary.clickElement(travelerLocator);
+//			myGSLibrary.customWait(1);
+//			myGSLibrary.clickElement(mylocator.getLocator("AddTravelorBtn"));
+//			myGSLibrary.customWait(1);
+//			log.info("Selected 2 Travelers");
 			
 	//First Flight
 			myGSLibrary.clickElement(mylocator.getLocator("FlightDropDown"));
