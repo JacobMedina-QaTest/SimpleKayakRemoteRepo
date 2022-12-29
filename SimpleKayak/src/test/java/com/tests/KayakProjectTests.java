@@ -23,6 +23,7 @@ public class KayakProjectTests extends Base{
 	LocatorMap mylocator = new LocatorMap(filePath);
 	
 	@Test
+	
 	public void searchTicket() {
 		try {
 			String webUrl = "https://www.kayak.com/";
@@ -157,5 +158,21 @@ public class KayakProjectTests extends Base{
 			assertEquals(true, false);
 		}
 	}
-	
+	@Test(groups = {"Smoke"})
+	public void searchTicket2() {
+		System.out.println("<-----> SEARCH TICKET TEST 2 'SMOKE' TEST");
+	}
+	@Test(groups = {"Sanity"})
+	public void searchTicket3() {
+		System.out.println("<-----> SEARCH TICKET TEST 3 'SANITY' TEST");
+	}
+	@Test(groups = {"Smoke"})
+	public void searchTicket4() {
+		System.out.println("<-----> SEARCH TICKET TEST 4 'SMOKE' TEST");
+	}
+	@Test(groups = {"Sanity"})
+	public void searchTicket5() {
+		System.out.println("<-----> SEARCH TICKET TEST 5 'SANITY' TEST");
+	}
 }
+
