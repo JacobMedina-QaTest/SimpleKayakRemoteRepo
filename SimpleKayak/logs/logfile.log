@@ -4296,3 +4296,46 @@ Session ID: b1f47179b0f70cd64abdd68e1cc83f0f
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) ~[surefire-booter-2.12.4.jar:2.12.4]
 INFO  | 2022-12-22 11:42:41 | [main] library.GlobalSelenium (GlobalSelenium.java:327) - Screenshot Location --->  C:\Users\medin\git\SimpleKayakLocalRepo\SimpleKayak\target\searchTicket_20221222114241031.png
 INFO  | 2022-12-22 11:42:47 | [main] library.Base (Base.java:50) - Running after all tests
+INFO  | 2022-12-26 11:50:55 | [main] library.Base (Base.java:36) - Running before all test.
+INFO  | 2022-12-26 11:50:55 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:50:55 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:50:55 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:50:55 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:50:55 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:51:08 | [main] library.GlobalSelenium (GlobalSelenium.java:128) - Starting browser ---> EDGE_CHROMIUM
+INFO  | 2022-12-26 11:51:08 | [main] tests.KayakProjectTests (KayakProjectTests.java:30) - Go to Website: https://www.kayak.com/
+INFO  | 2022-12-26 11:51:19 | [main] tests.KayakProjectTests (KayakProjectTests.java:39) - Click on 'Round Trip' dropdown element
+INFO  | 2022-12-26 11:51:23 | [main] tests.KayakProjectTests (KayakProjectTests.java:47) - Selected 2 Travelers
+INFO  | 2022-12-26 11:51:26 | [main] tests.KayakProjectTests (KayakProjectTests.java:61) - Selected Economy Class Flight
+INFO  | 2022-12-26 11:51:31 | [main] tests.KayakProjectTests (KayakProjectTests.java:74) - Selected Check Bags
+INFO  | 2022-12-26 11:51:35 | [main] tests.KayakProjectTests (KayakProjectTests.java:95) - To Destination Inserted
+INFO  | 2022-12-26 11:51:43 | [main] tests.KayakProjectTests (KayakProjectTests.java:110) - Departure date is selected
+INFO  | 2022-12-26 11:51:46 | [main] tests.KayakProjectTests (KayakProjectTests.java:115) - Return date is selected
+INFO  | 2022-12-26 11:51:58 | [main] tests.KayakProjectTests (KayakProjectTests.java:120) - Search button clicked...
+INFO  | 2022-12-26 11:52:07 | [main] library.Base (Base.java:50) - Running after all tests
+INFO  | 2022-12-26 11:57:56 | [main] library.Base (Base.java:36) - Running before all test.
+INFO  | 2022-12-26 11:57:56 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:57:56 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:57:56 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:57:56 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:57:56 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:58:07 | [main] library.GlobalSelenium (GlobalSelenium.java:128) - Starting browser ---> EDGE_CHROMIUM
+INFO  | 2022-12-26 11:58:07 | [main] tests.KayakProjectTests (KayakProjectTests.java:30) - Go to Website: https://www.kayak.com/
+INFO  | 2022-12-26 11:58:15 | [main] tests.KayakProjectTests (KayakProjectTests.java:39) - Click on 'Round Trip' dropdown element
+INFO  | 2022-12-26 11:58:48 | [main] library.Base (Base.java:36) - Running before all test.
+INFO  | 2022-12-26 11:58:48 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:58:48 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:58:48 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:58:48 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:58:48 | [main] library.JavaPropertiesManager (JavaPropertiesManager.java:38) - Reading properties file ---> src/test/resources/config.properties
+INFO  | 2022-12-26 11:58:58 | [main] library.GlobalSelenium (GlobalSelenium.java:128) - Starting browser ---> EDGE_CHROMIUM
+INFO  | 2022-12-26 11:58:58 | [main] tests.KayakProjectTests (KayakProjectTests.java:30) - Go to Website: https://www.kayak.com/
+INFO  | 2022-12-26 11:59:06 | [main] tests.KayakProjectTests (KayakProjectTests.java:39) - Click on 'Round Trip' dropdown element
+INFO  | 2022-12-26 11:59:10 | [main] tests.KayakProjectTests (KayakProjectTests.java:47) - Selected 2 Travelers
+INFO  | 2022-12-26 11:59:13 | [main] tests.KayakProjectTests (KayakProjectTests.java:61) - Selected Economy Class Flight
+INFO  | 2022-12-26 11:59:18 | [main] tests.KayakProjectTests (KayakProjectTests.java:74) - Selected Check Bags
+INFO  | 2022-12-26 11:59:23 | [main] tests.KayakProjectTests (KayakProjectTests.java:95) - To Destination Inserted
+INFO  | 2022-12-26 11:59:30 | [main] tests.KayakProjectTests (KayakProjectTests.java:110) - Departure date is selected
+INFO  | 2022-12-26 11:59:33 | [main] tests.KayakProjectTests (KayakProjectTests.java:115) - Return date is selected
+INFO  | 2022-12-26 11:59:44 | [main] tests.KayakProjectTests (KayakProjectTests.java:120) - Search button clicked...
+INFO  | 2022-12-26 11:59:53 | [main] library.Base (Base.java:50) - Running after all tests

@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="5" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-22T10:09:33 EST" name="Default suite" finished-at="2022-12-22T10:10:45 EST" duration-ms="72004">
+  <suite started-at="2022-12-26T11:58:48 EST" name="Default suite" finished-at="2022-12-26T11:59:53 EST" duration-ms="64838">
     <groups>
     </groups>
-    <test started-at="2022-12-22T10:09:33 EST" name="Default test" finished-at="2022-12-22T10:10:45 EST" duration-ms="72004">
+    <test started-at="2022-12-26T11:58:48 EST" name="Default test" finished-at="2022-12-26T11:59:53 EST" duration-ms="64838">
       <class name="com.tests.KayakProjectTests">
-        <test-method is-config="true" signature="beforeAllTest()[pri:0, instance:com.tests.KayakProjectTests@7c041b41]" started-at="2022-12-22T10:09:33 EST" name="beforeAllTest" finished-at="2022-12-22T10:09:33 EST" duration-ms="46" status="PASS">
+        <test-method is-config="true" signature="beforeAllTest()[pri:0, instance:com.tests.KayakProjectTests@303e3593]" started-at="2022-12-26T11:58:48 EST" name="beforeAllTest" finished-at="2022-12-26T11:58:48 EST" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeAllTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.KayakProjectTests@7c041b41]" started-at="2022-12-22T10:09:33 EST" name="setUp" finished-at="2022-12-22T10:09:44 EST" duration-ms="10707" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tests.KayakProjectTests@303e3593]" started-at="2022-12-26T11:58:48 EST" name="setUp" finished-at="2022-12-26T11:58:58 EST" duration-ms="10123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="searchTicket()[pri:0, instance:com.tests.KayakProjectTests@7c041b41]" started-at="2022-12-22T10:09:44 EST" name="searchTicket" finished-at="2022-12-22T10:10:39 EST" duration-ms="55063" status="PASS">
+        <test-method signature="searchTicket()[pri:0, instance:com.tests.KayakProjectTests@303e3593]" started-at="2022-12-26T11:58:58 EST" name="searchTicket" finished-at="2022-12-26T11:59:47 EST" duration-ms="48859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTicket -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.tests.KayakProjectTests@7c041b41]" started-at="2022-12-22T10:10:39 EST" name="tearDown" finished-at="2022-12-22T10:10:45 EST" duration-ms="6104" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.tests.KayakProjectTests@303e3593]" started-at="2022-12-26T11:59:47 EST" name="tearDown" finished-at="2022-12-26T11:59:53 EST" duration-ms="5751" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchTicket status=SUCCESS method=KayakProjectTests.searchTicket()[pri:0, instance:com.tests.KayakProjectTests@7c041b41] output={null}]]]>
+                <![CDATA[[TestResult name=searchTicket status=SUCCESS method=KayakProjectTests.searchTicket()[pri:0, instance:com.tests.KayakProjectTests@303e3593] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterAllTest()[pri:0, instance:com.tests.KayakProjectTests@7c041b41]" started-at="2022-12-22T10:10:45 EST" name="afterAllTest" finished-at="2022-12-22T10:10:45 EST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="afterAllTest()[pri:0, instance:com.tests.KayakProjectTests@303e3593]" started-at="2022-12-26T11:59:53 EST" name="afterAllTest" finished-at="2022-12-26T11:59:53 EST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAllTest -->
